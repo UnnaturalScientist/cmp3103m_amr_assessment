@@ -91,11 +91,13 @@ class Jareth_the_Goblin_King():
         print("odom pose: \n" + pformat(data.pose.pose))
         angle = self.odom_orientation(data.pose.pose.orientation)
         print("angle = %f" % angle)
+
     """
     __________________________________________________________________________________________________________
     4. Display Image Windows
     __________________________________________________________________________________________________________
     """
+
     # Exactly what the name states. A functional block to open windows to view images.
     def open_windows(self, event): # wtf is the event? check ws4 opt
         try:
@@ -297,6 +299,7 @@ if __name__ == '__main__':
 __________________________________________________________________________________________________________
 References
 __________________________________________________________________________________________________________
+
 ROS.org (2018) actionlib - ROS Wiki. Open Robotics. Available from
 http://wiki.ros.org/actionlib [accessed 9 February 2020].
 

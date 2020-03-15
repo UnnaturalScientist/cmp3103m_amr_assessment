@@ -98,6 +98,7 @@ def auto_pure(pose):
 	return auto_pure
 
 	rospy.spin()
+
 """
 __________________________________________________________________________________________________________
 4. Execution
@@ -125,14 +126,19 @@ if __name__ == '__main__':
 __________________________________________________________________________________________________________
 References
 __________________________________________________________________________________________________________
+
 ROS.org (2018) actionlib - ROS Wiki. Open Robotics. Available from
 http://wiki.ros.org/actionlib [accessed 9 February 2020].
+
 ROS.org (2019) move_base_msgs - ROS Wiki. Open Robotics. Available from
 http://wiki.ros.org/move_base_msgs [accessed 9 February 2020].
+
 Quigley, M., Gerkey, B. and Smart, W.D. (2015) Programming Robots with ROS.
 Sebastopol, USA: O'Reilly Media, Inc.
+
 Fairchild, C. and Harman, T.L. (2017) Ros Robotics By Example, 2nd Edition.
 Birmingham, UK: Packt Publishing Ltd.
+
 Packt Publishing (2017) Chapter04. Github. Available from
 https://github.com/PacktPublishing/ROS-Robotics-By-Example-Second-Edition/tree/master/Chapter04
 [accessed 9 February 2020].
