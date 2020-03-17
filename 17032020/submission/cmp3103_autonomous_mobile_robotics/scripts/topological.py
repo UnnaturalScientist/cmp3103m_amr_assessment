@@ -107,7 +107,6 @@ if __name__ == '__main__':
 
     rospy.init_node('Think_and_Act')
 
-    #TODO does this have some kind of log output? add some? if not?
     client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
     client.wait_for_server()
 

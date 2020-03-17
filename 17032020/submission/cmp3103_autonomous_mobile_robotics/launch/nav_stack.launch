@@ -1,6 +1,6 @@
 <launch>
 
-	<node name="move_base" pkg="cmp3103_autonomous_mobile_robotics" type="topological.py" output="screen"/>
+	<node name="search" pkg="cmp3103_autonomous_mobile_robotics" type="topological.py" output="screen"/>
 
     <include file="$(find turtlebot_navigation)/launch/includes/velocity_smoother.launch.xml"/>
     <include file="$(find turtlebot_navigation)/launch/includes/safety_controller.launch.xml"/>
@@ -11,7 +11,6 @@
     <arg name="odom_topic" default="odom" />
     <arg name="laser_topic" default="scan" />
     <arg name="custom_param_file" default="$(find turtlebot_navigation)/param/dummy.yaml"/>
-
 
     <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
         <rosparam file="$(find cmp3103_autonomous_mobile_robotics)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
