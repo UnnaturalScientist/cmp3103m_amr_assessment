@@ -1,0 +1,9 @@
+<launch>
+
+	<!--<node name="search" pkg="cmp3103_autonomous_mobile_robotics" type="sense".py" output="screen"/>-->
+
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/map_amcl.launch"/>
+
+	<remap from="cmd_vel_mux/input/teleop" to="sense_cmd_vel" />
+
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/sense.launch"/>
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/react.launch"/>
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/plan.launch"/>
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/coordinator.launch"/>
+
+</launch>
