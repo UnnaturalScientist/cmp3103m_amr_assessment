@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "/home/pei07088957/pei07088957_ws"
+		}
+	],
+	"settings": {
+		"ros.distro": "kinetic",
+		"python.autoComplete.extraPaths": [
+			"/opt/ros/kinetic/lib/python2.7/dist-packages"
+		],
+		"python.linting.lintOnSave": false,
+		"python.linting.pylintEnabled": false
+	}
+}
