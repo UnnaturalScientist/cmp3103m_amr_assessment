@@ -1,0 +1,17 @@
+<launch>
+
+    <!--
+    __________________________________________________________________________________________________________
+    Brief Description
+    __________________________________________________________________________________________________________
+    This script will allow for the teleoperation of the PWC and room selection within the household. It is
+    possible to do this by using an Xbox 360 controller and the joy package. This control system uses, purely,
+    teleoperation. It does not contain any method for room selection.
+    -->
+
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/sense.launch"/>
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/react.launch"/>
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/plan.launch"/>
+    <include file="$(find cmp3103_autonomous_mobile_robotics)/launch/coordinator.launch"/>
+
+</launch>

@@ -1,0 +1,12 @@
+subscribers:
+  - name:        "Sense"
+    topic:       "/sense_cmd"
+    timeout:     1.0
+    priority:    1
+
+  - name:        "Act"
+    topic:       "/act_cmd"
+    timeout:     1.0
+    priority:    0
+
+publisher:       "output/cmd"
