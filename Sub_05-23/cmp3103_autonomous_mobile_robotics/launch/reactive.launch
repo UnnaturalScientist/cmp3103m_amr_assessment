@@ -1,0 +1,19 @@
+<launch>
+
+    <!--
+    __________________________________________________________________________________________________________
+    Brief Description
+    __________________________________________________________________________________________________________
+    This script will allow for the teleoperation of the PWC and room selection within the household. It is
+    possible to do this by using an Xbox 360 controller and the joy package. This control system uses, purely,
+    teleoperation. It does not contain any method for room selection.
+
+    -->
+
+    <include file="$(find uol_turtlebot_simulator)/launch/maze1.launch"/>
+
+	<node name="reactive" pkg="cmp3103_autonomous_mobile_robotics" type="reactive.py" output="screen"/>
+
+	<!--<remap from="cmd_vel_mux/input/teleop" to="sense_cmd_vel" />-->
+
+</launch>
