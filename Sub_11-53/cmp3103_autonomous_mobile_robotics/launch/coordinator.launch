@@ -1,0 +1,32 @@
+<launch>
+
+    <!--
+    __________________________________________________________________________________________________________
+    Brief Description
+    __________________________________________________________________________________________________________
+    This script will allow for the teleoperation of the PWC and room selection within the household. It is
+    possible to do this by using an Xbox 360 controller and the joy package. This control system uses, purely,
+    teleoperation. It does not contain any method for room selection.
+    -->
+
+	<!-- The robot name may be "Mobile_base"-->
+	<arg name="robot_name" default="turtlebot"/>
+
+	<node pkg="nodelet" type="nodelet" name="$(arg robot_name)_nodelet_manager" args="manager"/>
+
+	<node pkg="nodelet" type="nodelet" name="cmd_vel_mux"
+			args="load yocs_cmd_vel_mux/CmdVelMuxNodelet $(arg robot_name)_nodelet_manager" clear_params="true" output="screen">
+		<param name="yaml_cfg_file"  value="$(find rbx2_nav)/config/yocs_cmd_vel.yaml"/>
+		<remap from="cmd_vel_mux/output/cmd_vel" to="/cmd_vel"/>
+	</node>
+
+</launch>
+
+<!--
+__________________________________________________________________________________________________________
+Brief Description
+__________________________________________________________________________________________________________
+This script will allow for the teleoperation of the PWC and room selection within the household. It is
+possible to do this by using an Xbox 360 controller and the joy package. This control system uses, purely,
+teleoperation. It does not contain any method for room selection.
+-->
